@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --lavanda: #e3bdfb;
+    --lavanda-claro: #E2D9F3;
+    --lilas-suave: #F1EBFA;
+    --off-white: #FAF7FF;
+    --rosa-pastel: #FFD6E7;
+    --texto: #131214;
+    --cinza-suave: #8E89A6;
+    --lavanda2: #B9A7E8 
+}
+body {
+  background-color: var(--lilas-suave);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.calculadora {
+   width: 90%;
+   max-width: 400px;
+   padding: 25px;
+   background-color:var(--lavanda-claro);
+   border-radius: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+}
+.visor {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    background-color: var(--off-white);
+    border: 2px solid var(--cinza-suave);
+    border-radius: 10px;
+}
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+.botoes button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.numero {
+    background-color: var(--off-white);
+    color: var(--texto);
+}
+.operador {
+    background-color: var(--lavanda);
+}
+.funcao {
+    background-color: var(--lavanda2);
+}
+.igual {
+    background-color: var(--rosa-pastel);
+}
+.numero:hover {
+    background-color: var(--lavanda);
+}
+.operador:hover {
+    background-color: var(--rosa-pastel);
+}
+.funcao:hover {
+    background-color: var(--rosa-pastel);
+}
+.igual:hover {
+    background-color: var(--lavanda);
+}
+.botoes button:active {
+    transform: scale(0.95);
+}
+.rodape {
+    margin-top: 70px;
+    padding: 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #ddd;
+
+    color: var(--texto);
+    font-size: 14px;
+}
+.rodape p {
+    margin: 5px 0;
+}
+.rodape a {
+    color: var(--texto);
+    text-decoration: none;
+
+    margin: 0 8px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.rodape a:hover {
+    color: var(--lavanda);
+}
+.links-rodape {
+    margin-top: 10px;
+}
+
+.links-rodape a {
+    margin: 0 8px;
+}
