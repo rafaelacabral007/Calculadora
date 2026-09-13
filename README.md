@@ -1,5 +1,7 @@
 # 🧮 Calculadora
 
+![Preview da calculadora](calculadora.png)
+
 Projeto de uma calculadora desenvolvida com HTML, CSS e JavaScript, criado com o objetivo de praticar conceitos básicos de desenvolvimento web e lógica de programação.
 
 ## 📌 Sobre o projeto
